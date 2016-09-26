@@ -1,6 +1,6 @@
 # Gaston
 
-Gaston is a Slack bot that snitches on user who remove their messages from
+Gaston is a Slack bot that snitches on users who remove their messages from
 channels.
 
 ## Installation
