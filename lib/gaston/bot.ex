@@ -18,7 +18,7 @@ defmodule Gaston.Bot do
   def handle_message(_,_), do: :ok
 
   defp handle_deleted_message(%{name: username}, %{name: channel}, text) do
-    %Gaston.Message{username: username, text: text, channel: channel}
+    %Gaston.Message.Schema{username: username, text: text, channel: channel}
     |> Gaston.Repo.insert!
   end
 end

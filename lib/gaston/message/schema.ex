@@ -1,4 +1,4 @@
-defmodule Gaston.Message do
+defmodule Gaston.Message.Schema do
   use Ecto.Schema
 
   schema "messages" do
