@@ -27,5 +27,7 @@ DATABASE_URL=postgres://localhost/gaston_dev
 ## Usage
 
 ```bash
+$ mix ecto.create
+$ mix ecto.migrate
 $ mix run --no-halt
 ```
