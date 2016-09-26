@@ -11,12 +11,14 @@ defmodule Gaston.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :slack],
+    [applications: [:logger, :slack, :postgrex, :ecto],
      mod: {Gaston, []}]
   end
 
   defp deps do
     [{:slack, "~> 0.7.1"},
-     {:websocket_client, git: "https://github.com/jeremyong/websocket_client"}]
+     {:websocket_client, git: "https://github.com/jeremyong/websocket_client"},
+     {:postgrex, ">= 0.0.0"},
+     {:ecto, "~> 2.0.0"}]
   end
 end
