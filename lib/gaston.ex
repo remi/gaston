@@ -5,7 +5,6 @@ defmodule Gaston do
     import Supervisor.Spec, warn: false
 
     children = [
-      supervisor(Gaston.Repo, []),
       worker(Gaston.Bot, [Application.get_env(:slack, :api_token)])
     ]
 
