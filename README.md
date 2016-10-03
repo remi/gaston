@@ -1,7 +1,6 @@
 # Gaston
 
-Gaston is a Slack bot that snitches on users who remove their messages from
-channels.
+Gaston is a Slack bot that snitches on users who remove their messages from channels.
 
 ## Installation
 
@@ -17,17 +16,12 @@ Gaston expects a few environment variables when it starts.
 # Slack API token linked to the bot
 SLACK_API_TOKEN=foo
 
-# Comma-separated list of channels where the bot will listen
-GASTON_CHANNELS=ABC123,DEF456
-
-# Database
-DATABASE_URL=postgres://localhost/gaston_dev
+# Channel ID where the bot will report stuff
+GASTON_REPORT_CHANNEL=ABC123
 ```
 
 ## Usage
 
 ```bash
-$ mix ecto.create
-$ mix ecto.migrate
 $ mix run --no-halt
 ```
